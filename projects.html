@@ -1,56 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Zain Akbar — Projects</title>
-<link rel="stylesheet" href="assets/styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects — Zain Akbar</title>
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-
-<nav class="nav">
-  <div class="inner">
-    <div class="brand">Zain Akbar<span class="dot"></span></div>
-    <button class="menu-btn btn ghost" aria-label="menu">Menu</button>
-    <div class="links" id="navLinks">
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
+  <nav class="nav">
+    <div class="inner">
+      <a class="brand" href="index.html">Zain Akbar</a>
+      <button class="menu-btn btn ghost" aria-label="menu">Menu</button>
+      <div class="links" id="navlinks">
+        <a href="index.html">Home</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<div class="container">
-  <h1 class="section-title">Projects</h1>
+  <main class="container">
+    <h1 class="section-title" data-animate>Projects</h1>
 
-  <article class="card">
-    <h2>Neon Esports Website</h2>
-    <p>A responsive, multi-page esports website with a shared design system, mobile navigation, and a tiny built-in FAQ chatbot. Built with HTML, CSS, and vanilla JavaScript.</p>
-    <div class="project-meta">
-      <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+    <div class="grid cards">
+      <article class="card" id="neon" data-animate>
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1200&auto=format&fit=crop')"></div>
+        <div class="card-body">
+          <h3>Neon Esports — Multi‑page site</h3>
+          <ul class="meta">
+            <li>HTML • CSS Grid/Flex • JS</li>
+            <li>Responsive layout, sections: Players, Matches, News, Contact</li>
+          </ul>
+          <div class="card-actions">
+            <a class="btn sm" href="#" onclick="alert('Add repo link here later.');return false;">GitHub</a>
+            <a class="btn ghost sm" href="#" onclick="alert('Add live demo link once deployed.');return false;">Live demo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" id="portfolio" data-animate>
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop')"></div>
+        <div class="card-body">
+          <h3>Portfolio v1 — This site</h3>
+          <ul class="meta">
+            <li>Netlify CI from GitHub</li>
+            <li>IntersectionObserver scroll animations</li>
+          </ul>
+          <div class="card-actions">
+            <a class="btn sm" href="https://github.com/zain-akbar/portfolio" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn ghost sm" href="#" onclick="alert('You are already here 😄');return false;">Live</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" id="components" data-animate>
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=1200&auto=format&fit=crop')"></div>
+        <div class="card-body">
+          <h3>Mini components</h3>
+          <ul class="meta">
+            <li>Practice set: navbars, cards, footers</li>
+            <li>Focus: clean HTML structure + CSS</li>
+          </ul>
+          <div class="card-actions">
+            <a class="btn sm" href="#" onclick="alert('Repo coming soon');return false;">GitHub</a>
+          </div>
+        </div>
+      </article>
     </div>
-    <div class="cta" style="margin-top:10px">
-      <a class="btn" href="../Neon-Esports-Multipage.zip" download>Download Project</a>
-      <a class="btn ghost" href="./neon-demo/index.html" onclick="alert('Add a live URL after hosting (GitHub Pages / Netlify).');return false;">Live Demo</a>
+  </main>
+
+  <footer>
+    <div class="inner">
+      <div>© <span id="yr"></span> Zain Akbar</div>
+      <div class="social">
+        <a href="#" onclick="alert('Add your LinkedIn URL');return false;">LinkedIn</a> •
+        <a href="https://github.com/zain-akbar" target="_blank" rel="noopener">GitHub</a> •
+        <a href="mailto:zainakbar.dev@gmail.com">Email</a>
+      </div>
     </div>
-  </article>
+  </footer>
 
-  <article class="card">
-    <h2>Upcoming: Portfolio Enhancements</h2>
-    <p>Adding project detail pages, blog posts about my learning journey, and an AI-augmented contact assistant.</p>
-    <div class="project-meta">
-      <span class="tag">Roadmap</span><span class="tag">Content</span>
-    </div>
-  </article>
-</div>
-
-<footer>
-  <div class="inner">
-    <div>© <span id="yr"></span> Zain Akbar</div>
-    <div>LinkedIn • GitHub • Email</div>
-  </div>
-</footer>
-
-<script src="assets/script.js"></script>
+  <script src="assets/script.js"></script>
 </body>
 </html>
